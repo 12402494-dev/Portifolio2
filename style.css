@@ -30,9 +30,9 @@ header li{
     font-family: roboto;
 }
 
-text-decoration: none;
-    color: black;
-    transition: 0.5s;
+header ul li a:hover{
+    color: #AD9966;
+}
 
 #home{
     color: #AD9966;
@@ -41,6 +41,7 @@ text-decoration: none;
 a{
     text-decoration: none;
     color: black;
+    transition: 0.5s;
 }
 
 .logo{
