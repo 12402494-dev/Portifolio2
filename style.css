@@ -1,0 +1,709 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 735vh;
+}
+
+header{
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+}
+
+header li{
+    margin-top: 5px;
+    display: inline-block;
+    list-style: 0;
+    line-height: 85px;
+    width: 4%;
+    font-size: 14px;
+    font-family: roboto;
+}
+
+#home{
+    color: #AD9966;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 22%;
+}
+
+.logo img{
+    vertical-align: middle;
+}
+
+.rooftop{
+    background-image: url(imagens/header.png);
+    background-size: cover;
+    height: 80vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-position: center top;    
+    position: relative;
+    z-index: 1;
+}
+
+.rooftopText{
+    height: 195px;
+    width: 475px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: white;
+    text-align: center;
+}
+
+.rooftop h1{
+    font-size: 100px;
+    font-family: "Playfair Display", serif;
+    line-height: 108px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.rooftop h6{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: normal;
+    font-family: "roboto";
+}
+
+.lateralEsquerdo{
+    width: 100px;
+    height: 180px;
+    background-position: center right;
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    left: 2%;
+    translate: -50% -50%;
+    background-image: url(imagens/view-menu-bg.png);
+}
+
+.lateralDireito{
+    width: 100px;
+    height: 180px;
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    left: 98%;
+    translate: -50% -50%;
+    background-image: url(imagens/book-table-bg.png);
+    line-height: 100px;
+    font-size: 13px;
+}
+
+.lateralDireito p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 180px;
+    height: 100px;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+    text-align: center;
+    position: relative;
+}
+
+.lateralDireito p:hover{
+    width: 100px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100px;
+    transform: rotate(0deg);
+    margin-right: 10%;
+    line-height: 180px;
+    transition: 0.5s;
+    font-size: 12px;
+    padding-right: 6%;
+}
+
+.lateralDireito a{
+    width: 100px;
+    font-family: "roboto";
+    color: white;
+    transition: 0.5s;
+}
+
+.lateralDireito a:hover{
+    font-family: "roboto";
+    color: black;
+    width: 100px;
+}
+
+.lateralEsquerdo p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 180px;
+    height: 100px;
+    line-height: 100px;
+    transform: rotate(90deg);
+    transition: 0.5s;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+}
+
+.lateralEsquerdo p:hover{
+    width: 100px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100px;
+    transform: rotate(0deg);
+    margin-right: 10%;
+    line-height: 180px;
+    transition: 0.5s;
+    font-size: 12px;
+    padding-left: 6%;
+}
+
+.lateralEsquerdo a{
+    width: 100px;
+    font-family: "roboto";
+    color: black;
+    transition: 0.5s;
+}
+
+.lateralEsquerdo a:hover{
+    font-family: "roboto";
+    color: #AD9966;
+    width: 100px;
+}
+
+#section-menu{  
+    height: 1190px;
+    margin: auto;
+    width: 1147px;
+
+}
+
+#menu-daily{
+    display: inline-block;
+    height: 1175px;
+    width: 505px;
+    text-align: left;
+    position: relative;
+    bottom: 200px;
+}
+
+#menu-itens{
+    display: inline-block;
+    height: 1175px;
+    width: 635px;
+    background-color: #faf5f0;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.menu-titles{
+    font-size: 21px;
+    position: relative;
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+}
+
+#menu-itens hr{
+    width: 116px;
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+#menu-itens dl dt{
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#menu-itens dl dd{
+    font-family: "roboto";
+    color: #777777;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+#menu-daily h1{
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+}
+
+#menu-daily p{
+    font-family: "roboto";
+    font-size: 15px;
+    color: #777777;
+    line-height: 30px;
+    width: 390px;
+}
+
+#menu-daily button{
+    height: 50px;
+    width: 197px;
+    color: white;
+    background-color: #AD9966;
+    border: none;
+    margin-top: 50px;
+    font-family: "roboto";
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#menu-daily button:hover{
+    height: 50px;
+    width: 197px;
+    color: #AD9966;
+    border: #AD9966 solid 0.5px;
+    background-color: transparent;
+    margin-top: 50px;
+    font-family: "roboto";
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.gallery{
+    width: 1050px;
+    margin: auto;
+}
+
+.gallery div{
+    display: inline-block;
+    margin-right: 30px;
+    transition: 0.5s;
+    background-position: center;
+    z-index: 1;
+}
+
+.gallery div:hover{
+    background-size: 120%;
+    background: rgba(0, 0, 0, 50%);
+}
+
+#galleryUm{
+    background-image: url(imagens/g1.jpg);
+    width: 540px;
+    height: 778px;
+    position: relative;
+    z-index: 98;
+    bottom: 100px;
+}
+
+#galleryDois{
+    background-image: url(imagens/g2.jpg);
+    width: 445px;
+    height: 545px;
+    position: relative;
+    top: 50px;
+}
+
+#galleryTres{
+    background-image: url(imagens/g3.jpg);
+    width: 445px;
+    height: 545px;
+    position: relative;
+    left: 95px;
+    bottom: 100px;
+}
+
+#galleryQuatro{
+    background-image: url(imagens/g4.jpg);
+    width: 540px;
+    height: 583px;
+    position: relative;
+    left: 95px;
+    top: 80px;
+}
+
+.galleryAnimUm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 540px;
+    height: 778px;
+    line-height: 300px;
+    text-align: center;
+    font-size: 60px;
+    transition: 0.5s;
+    color: transparent;
+}
+
+
+.galleryAnimUm:hover{
+    color: white;
+    line-height: 778px;
+}
+
+.galleryAnimDois{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 445px;
+    height: 545px;
+    line-height: 300px;
+    text-align: center;
+    font-size: 60px;
+    transition: 0.5s;
+    color: transparent;
+}
+
+.galleryAnimDois:hover{
+    color: white;
+    line-height: 545px;
+}
+
+.galleryAnimQuatro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 540px;
+    height: 583px;
+    line-height: 300px;
+    text-align: center;
+    font-size: 60px;
+    transition: 0.5s;
+    color: transparent;
+}
+
+.galleryAnimQuatro:hover{
+    color: white;
+    line-height: 583px;
+}
+
+.form-section{
+    margin: auto;
+    width: 1150px;
+}
+
+.form-section div{
+    margin-top: 200px;
+}
+
+.form-divUm{
+    background-color: #faf5f0;
+    width: 635px;
+    height: 938px;
+    display: inline-block;
+}
+
+.form-divDois{
+    width: 505px;
+    height: 938px;
+    display: inline-block;
+    position: absolute ;
+    text-align: left;   
+}
+
+.form-div{
+    background-color: #faf5f0;
+}
+
+form{
+    margin-top: 90px;
+    text-align: center;
+}
+
+form input{
+    border: none;
+    height: 38px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+#f1{
+    width: 85%;
+}
+
+#f2{
+    width: 252px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#f3{
+    width: 85%;
+    height: 150px;
+    padding-bottom: 18%;
+}
+
+form>button{
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 191px;
+    height: 50px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-family: "roboto";
+    cursor: pointer;
+    position: relative;
+    left: 110px;
+    transition: 0.5s;
+}
+
+form>button:hover{
+    background-color: transparent;
+    color: #AD9966;
+    border: #AD9966 solid 1px;
+}
+
+.form-divDois h3{
+    margin-top: 120px;
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+    margin-left: 120px;
+}
+
+.form-divDois p{
+    margin-top: 20px;
+    color: #777777;
+    font-size: 15px;
+    font-family: "roboto";
+    line-height: 30px;
+    margin-left: 120px;
+}
+
+.section-quotes{
+    width: 1150px;
+    height: 820px;
+    margin: auto;
+}
+
+.section-quotes div{
+    display: inline-block;
+}
+
+.section-quotes-chef{
+    position: relative;
+    z-index: 98;
+    height: 778px;
+    width: 570px;
+    background-image: url(imagens/chefs-quotes.jpg);
+    background-position: center;
+    background-size: cover;
+    bottom: 70px;
+}
+
+.section-quotes-text{
+    width: 570px;
+    height: 600px;
+    position: relative;
+    bottom: 220px;
+
+}
+
+.section-quotes-text h3{
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+}
+
+.section-quotes-text p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 30px;
+    font-family: "roboto";
+    color: #777777;
+    font-size: 16px;
+}
+
+.section-carrocel{
+    width: 1500px;
+    margin: auto;
+    text-align: center;
+    height: 450px;
+}
+
+.section-carrocel a{
+    display: inline-block;
+    line-height: 100px;
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+.section-carrocel a:hover{
+    opacity: 100%;
+}
+
+.section-carrocel a img{
+    vertical-align: middle;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.section-carrocel-div{
+    display: inline-block;
+    background-image: url(imagens/callaction-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 1140px;
+    vertical-align: middle;
+    height: 100%;
+    position: relative;
+
+}
+
+.section-carrocel-div div{
+    background-color: rgba(255, 255, 255, 90%);
+    width: 513px;
+    height: 163px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.section-carrocel-div div h3{
+    margin-top: 40px;
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-style: italic;
+    position: relative;
+    font-weight: normal;
+}
+
+.section-carrocel-div div hr{
+    width: 95px;
+    height: 1px;
+    display: inline-block;
+}
+
+.section-carrocel-div div p{
+    font-family: "roboto";
+    margin-top: 20px;
+    color: #777777;
+    font-size: 15px;
+}
+
+.section-address{
+    width: 1140px;
+    height: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-address div{
+    width: 540px;
+    height: 600px;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.map{
+    background-color: #E8EAED;
+    text-align: center;
+    position: relative;
+    bottom: 26.1%;
+}
+
+.map li{
+    list-style: none;
+}
+
+#map-um{ 
+    background-color: #757575;
+    width: 48px;
+    height: 48px;
+    color: white;
+    border-radius: 50%;
+    line-height: 48px;
+    font-size: 40px;
+    font-family: "roboto";
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+#map-dois{
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: "roboto";
+    color: #3c4043;
+}
+
+#map-tres{
+    font-size: 12px;
+    font-family: "roboto";
+    color: #3c4043;
+}
+
+.section-address-text{
+    text-align: left;
+    padding-left: 10%;
+}
+
+.section-address-text li{
+    list-style: none;
+    color: #777777;
+    font-family: "roboto";
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.section-address-text h3{
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 20px;
+}
+
+#address-text-um{
+    margin-top: 50px;
+}
+
+#address-text-dois{
+    margin-top: 50px;
+}
+
+.roda-pe{
+    margin-top: 100px;
+    height: 48vh;
+    width: 100%;
+    background-color: #04091E;
+    
+}
