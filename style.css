@@ -30,6 +30,10 @@ header li{
     font-family: roboto;
 }
 
+text-decoration: none;
+    color: black;
+    transition: 0.5s;
+
 #home{
     color: #AD9966;
 }
